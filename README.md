@@ -15,13 +15,13 @@ pip install -r watchbucket/requirements.txt
 Before running the service, you need to configure the necessary settings:
 
 1. **Python Executable Path**  
-   Specify the path to your Python executable in the `run_service.sh` script:
+   Specify the path to your Python executable in the `service.sh` script:
    ```bash
    PYTHON=/usr/bin/python3
    ```
 
 2. **Repository Path**  
-   Define the path to your clone of this repository in the `run_service.sh` script:
+   Define the path to your clone of this repository in the `service.sh` script:
    ```bash
    ROOT_DIR=/home/user/watchbucket
    ```
