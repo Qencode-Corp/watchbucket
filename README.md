@@ -46,12 +46,30 @@ Before running the service, you need to configure the necessary settings:
    S3_SECRET = '123456789'
    ```
 
+   Specify the folder to monitor in `watchbucket/settings/system.py`:
+   ```python
+   INPUT_PATH = 'input' # S3 folder with input videos
+   PROCESSED_PATH = 'processed' # Contains data for files from input folder which were already processed.
+   ERRORS_PATH = 'errors' # Videos from trancoding jobs with errors will be moved here.
+   ```
+
 ## Running the Service
 
 To run the service, execute the `run_service.sh` script from the command line:
 
 ```bash
-./run_service.sh
+./service.sh start
 ```
+
+You can stop the service using the following command:
+```bash
+./service.sh stop
+```
+
+To restart:
+```bash
+./service.sh restart
+```
+
 
 Ensure that you have the necessary permissions to execute the script.
