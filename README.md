@@ -50,7 +50,6 @@ Before running the service, you need to configure the necessary settings:
    ```python
    INPUT_PATH = 'input' # S3 folder with input videos
    PROCESSED_PATH = 'processed' # Contains data for files from input folder which were already processed.
-   ERRORS_PATH = 'errors' # Videos from trancoding jobs with errors will be moved here.
    ```
 
 ## Running the Service
