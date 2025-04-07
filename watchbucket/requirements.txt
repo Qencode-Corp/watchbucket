@@ -1,0 +1,4 @@
+
+boto3
+qencode3
+requests
